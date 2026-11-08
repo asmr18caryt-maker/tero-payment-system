@@ -1,0 +1,24 @@
+{
+  "name": "tero-payment-module",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Manual UPI QR + bank transfer billing and payment verification module for Tero Restro & Cafe",
+  "scripts": {
+    "test": "node --import tsx --experimental-test-module-mocks --test tests/*.test.ts",
+    "db:generate": "drizzle-kit generate"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.8",
+    "@netlify/database": "^2.0.3",
+    "@netlify/functions": "^6.1.1",
+    "drizzle-orm": "^1.0.0-beta.22"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.2.17",
+    "@types/node": "^26.6.6",
+    "drizzle-kit": "^1.0.0-beta.22",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
